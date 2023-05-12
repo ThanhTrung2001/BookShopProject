@@ -7,6 +7,6 @@ namespace BookShopProject.Models
     [Required]
     public int Id { get; set; }
     [Required]
-    public string TyppeName { get; set; }
+    public string TypeName { get; set; }
   }
 }
