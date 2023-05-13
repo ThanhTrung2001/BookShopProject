@@ -13,9 +13,9 @@ namespace BookShopProject.Models
     [Required]
     public string Description { get; set; }
     [Required]
-    public string AuthorId { get; set; }
+    public int AuthorId { get; set; }
     [Required]
-    public List<Type> Types { get; set; }
+    public int BookTypeId { get; set; }
     [Required]
     public DateTime PublishDay { get; set; }
     [Required]

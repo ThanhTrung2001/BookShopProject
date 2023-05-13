@@ -2,7 +2,7 @@
 
 namespace BookShopProject.Models
 {
-  public class Type
+  public class BookType
   {
     [Required]
     public int Id { get; set; }

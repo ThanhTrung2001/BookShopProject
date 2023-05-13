@@ -2,7 +2,7 @@
 
 namespace BookShopProject.Controllers
 {
-  public class BookController : Controller //use for Book, Author & Type
+  public class DashBoardController : Controller
   {
     public IActionResult Index()
     {
