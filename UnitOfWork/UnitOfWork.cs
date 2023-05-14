@@ -22,7 +22,34 @@ namespace BookShopProject.UnitOfWork
       }
     }
 
-    //When all transactions complete -> Call Commit for give the changes permanently in database (not for save-luu tru)
+    //If at least 1 transaction failed -> Rollback to give database to previous state 
+    public void Rollback()
+    {
+      try
+      {
+        transaction?.Rollback();
+      }
+      finally
+      {
+        DisposeTransaction();
+      }
+    }
+
+    //When Do a Transaction, we must alway need to call Save() from DBcontext to make the changes in the database permanently, to apply changes to database permanently
+    public void Save()
+    {
+      try
+      {
+        Context.SaveChanges();
+      }
+      catch
+      {
+        Rollback();
+        throw;
+      }
+    }
+
+    //When all transactions complete -> Call Commit for give the changes permanently in database, and close the transaction
     public void Commit()
     {
       try
@@ -40,32 +67,6 @@ namespace BookShopProject.UnitOfWork
       }
     }
 
-    //If at least 1 transaction failed -> Rollback to give database to previous state 
-    public void Rollback()
-    {
-      try
-      {
-        transaction?.Rollback();
-      }
-      finally
-      {
-        DisposeTransaction();
-      }
-    }
-
-    //And finally, When Do a Transaction, we must alway need to call Save() from make the changes in the database permanently, to apply changes to database permanently(this is save-luu tru database)
-    public void Save()
-    {
-      try
-      {
-        Context.SaveChanges();
-      }
-      catch
-      {
-        Rollback();
-        throw;
-      }
-    }
     // Use to free unmanaged resources like files, database connections etc. at any time.
     public void Dispose()
     {
