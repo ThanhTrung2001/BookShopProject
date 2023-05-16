@@ -1,0 +1,88 @@
+﻿.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*this will make header not scroll with page*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(211,213,214);
+}
+
+.left-section {
+    display: flex;
+    margin-left: 30px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.middle-section{
+    flex:1;
+    display:flex;
+    max-width: 580px;
+    align-items: center;
+    justify-content:center;
+    margin: 0 30px;
+}
+
+.search-bar {
+    flex: 1;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 60px;
+    border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid rgb(211,213,214);
+}
+
+.search-button {
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(201,33,39);
+    border: none;
+    border-radius: 6px;
+    margin-left: -65px;
+}
+
+.search-icon{
+    height: 18px;
+}
+
+.right-section {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px
+}
+
+.cart-button, .account-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    border-radius: 6px;
+}
+.cart-button:hover, .account-button:hover{
+    background-color: lightseagreen;
+}
+
+
+.cart-icon, .account-icon {
+        height: 23px;
+}
+
+
+
