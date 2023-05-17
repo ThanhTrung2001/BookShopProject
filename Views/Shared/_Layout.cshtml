@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/partial/book.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BookShopProject.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -15,10 +16,22 @@
             <img class="logo" src="~/images/fahasa_logo.png" />
         </div>
         <div class="middle-section">
-            <input class="search-bar" placeholder="Search" type="text"/>
-            <button class="search-button">
-                <img class="search-icon" src="~/icons/ico_search_white.svg"/>
+            <button class="category-button">
+                <img class="category-icon" src="~/icons/menu_rounded_64px.png" />
+                <ul class="category-dropdown-menu">
+                    <li class="dropdown-item"><a>Type1</a></li>
+                    <li class="dropdown-item"><a>Type2</a></li>
+                    <li class="dropdown-item"><a>Type3</a></li>
+                    <li class="dropdown-item"><a>Type4</a></li>
+                    <li class="dropdown-item"><a>Type5</a></li>
+                    <li class="dropdown-item"><a>Type6</a></li>
+                    <!-- this is where define type-->
+                </ul>
             </button>
+            <input class="search-bar" placeholder="Search" type="text"/>
+            <div class="search-button">
+                <img class="search-icon" src="~/icons/ico_search_white.svg"/>
+            </div>
         </div>
         <div class="right-section">
             <button class="cart-button">

@@ -10,11 +10,14 @@
     right: 0;
     z-index: 100;
     border-bottom: 1px solid rgb(211,213,214);
+    background-color: white;
 }
 
 .left-section {
     display: flex;
     margin-left: 30px;
+    align-items: center;
+    justify-content:center;
 }
 
 .logo {
@@ -57,6 +60,44 @@
     height: 18px;
 }
 
+.category-button {
+    display: flex;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.category-button:hover .category-dropdown-menu,.category-dropdown-menu:hover{
+    display:block;
+}
+
+.category-dropdown-menu {
+    position: absolute;
+    z-index:999;
+    top: 43px;
+    left: 250px;
+    background-color: white;
+    border: 2px solid black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    color: black;
+    list-style: none;
+    justify-content: center;
+    text-align:center;
+    display:none;
+}
+
+.dropdown-item {
+    display:flex;
+    width:100%;
+}
+
 .right-section {
     width: 100px;
     display: flex;
@@ -69,19 +110,18 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 100px;
     background-color: transparent;
     border: none;
     margin-left: 15px;
     border-radius: 6px;
 }
-.cart-button:hover, .account-button:hover{
-    background-color: lightseagreen;
-}
+    .cart-button:hover, .account-button:hover{
+        background-color: antiquewhite;
+    
+    }
 
-
-.cart-icon, .account-icon {
-        height: 23px;
+.cart-icon, .account-icon, .category-icon {
+        height:23px;
 }
 
 
