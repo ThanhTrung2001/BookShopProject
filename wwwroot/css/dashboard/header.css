@@ -1,0 +1,35 @@
+﻿.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height:51px;
+    background-color:grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-section{
+    flex:1;
+}
+
+.left-section{
+    display:flex;
+
+}
+
+.main-body{
+    flex:1;
+}
+
+footer{
+   display:block;
+   text-align:end;
+}
+
+
+
+

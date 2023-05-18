@@ -8,5 +8,19 @@ namespace BookShopProject.Controllers
     {
       return View();
     }
+
+    public IActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(string name, string password)
+    {
+      return RedirectToAction();
+    }
+
+
+
   }
 }

@@ -1,5 +1,40 @@
-﻿@model Book
+﻿@*@model Book*@
 @{
 
 }
+<div class="book-detail">
+    <div class="detail-top-section">
+        <div class="detail-top-section__left">
+            <img class="detail-img" src="/images/book/8935244872453.jpg"/>
+        </div>
+        <div class="detail-top-section__right">
+            <div class="detail-name-container">
+                <div class="detail-name">Komi - Nữ thần sợ giao tiếp</div>
+                <div class="detail__is-sale"> 30%</div>
+            </div>
+            <div class="detail-property">
+                <div class="detail-property-type">Type</div>
+                <div class="detail-property-author">Author name</div>
+            </div>
+            <div class="detail-price">
+                90.000 đ
+            </div>
+            <div class="detail-amount-container">
+                <div class="detail-amount">
+                    <button class="detail-plus-button">
+                        <img class="detail-plus-icon" src="~/icons/Plus_48px.png" />
+                    </button>
+                    <input class="detail-amount-number" type="number" value="1" />
+                    <button class="detail-minus-button">
+                        <img class="detail-minus-icon" src="~/icons/minus_48px.png" />
+                    </button>
+                </div>
+            </div>
+            <div class="detail-button">
+                <button class="detail-cart-button">Add To Cart</button>
+                <button class="detail-buy-button">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
 
