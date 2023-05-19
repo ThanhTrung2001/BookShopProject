@@ -36,7 +36,7 @@
 
 .subsidebar-link {
     display: flex;
-    line-height: 30px;
+    line-height: 50px;
     align-items: center;
     padding-left: 60px;
     cursor: pointer;
