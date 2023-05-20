@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/dashboard/header.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/dashboard/sidebar.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/dashboard/dashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index-body/index.css" asp-append-version="true" />
 </head>
 <body class="body">
     <div class="left-section">
@@ -19,8 +20,11 @@
             </div>
             <ul class="sidebar-navigation-list">
                 <li class="sidebar-link">
-                    <img class="sidebar-link-icon" src="/icons/dashboard_64px.png" />
-                    Dashboard
+                    <a asp-controller="Book" asp-action="IndexPage">
+                        <img class="sidebar-link-icon" src="/icons/dashboard_64px.png" />
+                        Dashboard
+                    </a>
+                    
                 </li>
                 <li class="sidebar-link">
                     <img class="sidebar-link-icon" src="/icons/fingerprint_64px.png" />
@@ -31,13 +35,13 @@
                     Catalog
                 </li>
                 <li class="subsidebar-link">
-                    Book List
+                    <a asp-controller="Book" asp-action="IndexPage">Book List</a>
                 </li>
                 <li class="subsidebar-link">
-                    Categort List
+                    <a asp-controller="Category" asp-action="Index">Category List</a>
                 </li>
                 <li class="subsidebar-link">
-                    Author List
+                    <a asp-controller="Author" asp-action="Index">Author List</a>
                 </li>
                 <li class="sidebar-link">
                     <img class="sidebar-link-icon" src="/icons/Mine Cart_128px.png" />

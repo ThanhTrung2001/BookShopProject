@@ -5,15 +5,11 @@ namespace BookShopProject.Controllers
 {
     public class BookController : Controller //use for Book, Author & Type
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         [HttpGet]
-        public IActionResult ViewDetail(int id)
+        public IActionResult IndexPage()
         {
-            return View("~/View/Book/BookDetail.cshtml");
+            return View();
         }
 
         [HttpGet]
@@ -33,14 +29,14 @@ namespace BookShopProject.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            return View();
+            return RedirectToAction("Create");
         }
 
         [HttpGet]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Book book)
         {
-            return View();
+            return View("Create");
         }
 
         [HttpPost]

@@ -3,51 +3,45 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookShopProject.Controllers
 {
-  public class BillController : Controller
-  {
-    public IActionResult Index()
+    public class BillController : Controller
     {
-      return View();
-    }
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-    [HttpGet]
-    public IActionResult ViewDetail(int id)
-    {
-      return View();
-    }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-    [HttpGet]
-    public IActionResult Create()
-    {
-      return View();
-    }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Book book)
+        {
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Create(Book book)
-    {
+            return View();
+        }
 
-      return View();
-    }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            return View();
+        }
 
-    [HttpGet]
-    public IActionResult Edit(int id)
-    {
-      return View();
-    }
+        [HttpGet]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Book book)
+        {
+            return View();
+        }
 
-    [HttpGet]
-    [ValidateAntiForgeryToken]
-    public IActionResult Edit(Book book)
-    {
-      return View();
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            return View();
+        }
     }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Delete(int id)
-    {
-      return View();
-    }
-  }
 }

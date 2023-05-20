@@ -43,6 +43,10 @@
     transition: all 0.3s ease;
 }
 
+.subsidebar-link a{
+    color:white;
+}
+
     .subsidebar-link:hover {
         padding-left: 90px;
         
